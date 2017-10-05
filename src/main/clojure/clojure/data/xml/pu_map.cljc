@@ -35,7 +35,7 @@
     (core/dissoc! u->ps uri)))
 
 (defn assoc! [{:as put :keys [p->u u->ps]} prefix uri]
-  (when (or (core/get #{"xml" "xmlns"} prefix)
+  #_(when (or (core/get #{"xml" "xmlns"} prefix)
             (core/get #{name/xml-uri name/xmlns-uri} uri))
     (throw (ex-info "Mapping for xml: and xmlns: prefixes are fixed by the standard"
                     {:attempted-mapping {:prefix prefix
