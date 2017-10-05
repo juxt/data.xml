@@ -1,4 +1,4 @@
-(defproject org.clojure/data.xml "0-UE-DEVELOPMENT"
+(defproject juxt.forks/data.xml "0.2.0-alpha3"
   :source-paths ["src/main/clojure"]
   :test-paths ["src/test/clojure" "src/test/clojurescript"]
   :resource-paths ["src/test/resources" "target/gen-resources"]
